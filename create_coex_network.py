@@ -5,8 +5,8 @@ ZMFGS = co.RefGen("Zm5bFGS")
 
 # create KLS network
 ZmTissueNetwork = co.COB.from_table(
-       'split/KLS.txt',
-       'KLS', # Dataset Name
+       'data/splits/KSS.txt',
+       'KSS_T', # Dataset Name
        'Co-expression network for all KLS annotated samples', # Short Description
        ZMFGS, #A RefGen instance
        rawtype='RNASEQ', # Expression datatype, either 'RNASEQ' or 'MICROARRAY'
