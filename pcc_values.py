@@ -1,3 +1,8 @@
+#
+# Generate pcc values
+#
+# Will compare gene edge values row by row and calculate the pcc value
+#
 import camoco as co
 import numpy as np
 import scipy.stats as st
@@ -11,6 +16,7 @@ def main():
     KSS = co.COB("KSS")
 
     # Get the genes from each co-expression network and create an intersection
+    # (only keep a list of genes in both networks)
     common_genes = np.intersect1d(KLS._expr.index.values, KSS._expr.index.values)
 
     # Calculate the length of the genes they have in common

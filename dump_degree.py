@@ -1,3 +1,8 @@
+#
+# Reads the degree from a co-expression network (specified in the command line)
+# and prints it to the screen
+#
+
 from optparse import OptionParser
 import camoco as co
 import pandas as pd
